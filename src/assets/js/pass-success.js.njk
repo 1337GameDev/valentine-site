@@ -1,0 +1,26 @@
+---
+permalink: /pass/{{ pkg.basic_pass|safe }}.js
+layout: null
+---
+
+(function() {
+    "use strict";
+    console.log("success js loaded");
+
+    //get the filename of this js to use as the passcode
+    var scripts = document.getElementsByTagName('script'); 
+    var filepath = scripts[scripts.length-1].src; 
+
+    //using the url, split it to get the filename
+    var fileUrl = new URL(filepath);
+    var filename = fileUrl.pathname.split('/').slice(-1)[0];//get last entry in path
+    //remove any extenions
+    filename = filename.split('.').slice(0,1)[0];
+
+    //set any needed cookies
+    Cookies.set('passcode', '{{ pkg.basic_pass|safe }}', { expires: 1 });
+    Cookies.set('passcode_key', '{{ pkg.xor_secret|safe }}', { expires: 1 });
+
+    //goto the timeline page :)
+    setTimeout(function(){ window.location = window.location.origin + "{{ pkg.success_page_path | safe }}"; }, 1000);
+})();

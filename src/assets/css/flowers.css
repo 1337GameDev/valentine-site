@@ -1,0 +1,1830 @@
+.bouquet-container, main {
+  min-height: 120px;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Petit Formal Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/petitformalscript/v17/B50TF6xQr2TXJBnGOFME6u5OR83oRP5qkHDgPqoaWiDPWQ.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Petit Formal Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/petitformalscript/v17/B50TF6xQr2TXJBnGOFME6u5OR83oRP5qkH7gPqoaWiA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+    /* ================
+    // Love Letters
+    // ============= */
+.love {
+    position: relative;
+    margin-bottom: 6em;
+    padding-top: 4em;
+    text-align: center;
+  }
+  @media (min-width: 600px) {
+    .love {
+      left: 50%;
+      margin-bottom: 0;
+      margin-left: -9.375em;
+      padding-top: 10em;
+      transform: translate(-50%, 0);
+    }
+  }
+  
+  .letter {
+    top: 0;
+    left: 0;
+    display: inline-block;
+    font-size: 4vmin;
+    text-shadow: 0 0 0.25em red, 0 0 0.35em red, 0 0 0.45em transparent, 0 0 0.55em transparent, 0 0 0.65em transparent;
+  }
+  @media (min-width: 600px) {
+    .letter {
+      offset-distance: 0;
+      offset-path: path("m0, 0 c100, -150 200, -150 300, 0");
+    }
+  }
+  .letter:nth-child(1) {
+    -webkit-animation: twinkle 2.7s infinite 1.65s;
+            animation: twinkle 2.7s infinite 1.65s;
+    offset-distance: 5.5555555556%;
+  }
+  .letter:nth-child(2) {
+    -webkit-animation: twinkle 2.7s infinite 2.55s;
+            animation: twinkle 2.7s infinite 2.55s;
+    offset-distance: 11.1111111111%;
+  }
+  .letter:nth-child(3) {
+    -webkit-animation: twinkle 2.7s infinite 1.5s;
+            animation: twinkle 2.7s infinite 1.5s;
+    offset-distance: 16.6666666667%;
+  }
+  .letter:nth-child(4) {
+    -webkit-animation: twinkle 2.7s infinite 1.05s;
+            animation: twinkle 2.7s infinite 1.05s;
+    offset-distance: 22.2222222222%;
+  }
+  .letter:nth-child(5) {
+    -webkit-animation: twinkle 2.7s infinite 0.75s;
+            animation: twinkle 2.7s infinite 0.75s;
+    offset-distance: 27.7777777778%;
+  }
+  .letter:nth-child(6) {
+    -webkit-animation: twinkle 2.7s infinite 1.8s;
+            animation: twinkle 2.7s infinite 1.8s;
+    offset-distance: 33.3333333333%;
+  }
+  .letter:nth-child(7) {
+    -webkit-animation: twinkle 2.7s infinite 1.8s;
+            animation: twinkle 2.7s infinite 1.8s;
+    offset-distance: 38.8888888889%;
+  }
+  .letter:nth-child(8) {
+    -webkit-animation: twinkle 2.7s infinite 0.15s;
+            animation: twinkle 2.7s infinite 0.15s;
+    offset-distance: 44.4444444444%;
+  }
+  .letter:nth-child(9) {
+    -webkit-animation: twinkle 2.7s infinite 1.95s;
+            animation: twinkle 2.7s infinite 1.95s;
+    offset-distance: 50%;
+  }
+  .letter:nth-child(10) {
+    -webkit-animation: twinkle 2.7s infinite 1.65s;
+            animation: twinkle 2.7s infinite 1.65s;
+    offset-distance: 55.5555555556%;
+  }
+  .letter:nth-child(11) {
+    -webkit-animation: twinkle 2.7s infinite 0.45s;
+            animation: twinkle 2.7s infinite 0.45s;
+    offset-distance: 61.1111111111%;
+  }
+  .letter:nth-child(12) {
+    -webkit-animation: twinkle 2.7s infinite 2.25s;
+            animation: twinkle 2.7s infinite 2.25s;
+    offset-distance: 66.6666666667%;
+  }
+  .letter:nth-child(13) {
+    -webkit-animation: twinkle 2.7s infinite 0.6s;
+            animation: twinkle 2.7s infinite 0.6s;
+    offset-distance: 72.2222222222%;
+  }
+  .letter:nth-child(14) {
+    -webkit-animation: twinkle 2.7s infinite 1.2s;
+            animation: twinkle 2.7s infinite 1.2s;
+    offset-distance: 77.7777777778%;
+  }
+  .letter:nth-child(15) {
+    -webkit-animation: twinkle 2.7s infinite 1.95s;
+            animation: twinkle 2.7s infinite 1.95s;
+    offset-distance: 83.3333333333%;
+  }
+  .letter:nth-child(16) {
+    -webkit-animation: twinkle 2.7s infinite 2.25s;
+            animation: twinkle 2.7s infinite 2.25s;
+    offset-distance: 88.8888888889%;
+  }
+  .letter:nth-child(17) {
+    -webkit-animation: twinkle 2.7s infinite 1.05s;
+            animation: twinkle 2.7s infinite 1.05s;
+    offset-distance: 94.4444444444%;
+  }
+  .letter:nth-child(18) {
+    -webkit-animation: twinkle 2.7s infinite 0.15s;
+            animation: twinkle 2.7s infinite 0.15s;
+    offset-distance: 100%;
+  }
+  .letter:empty {
+    padding: 0 0.2em;
+  }
+  
+  @-webkit-keyframes twinkle {
+    50% {
+      text-shadow: 0 0 0.25em red, 0 0 0.35em red, 0 0 0.45em red, 0 0 0.55em red, 0 0 0.65em red;
+    }
+  }
+  
+  @keyframes twinkle {
+    50% {
+      text-shadow: 0 0 0.25em red, 0 0 0.35em red, 0 0 0.45em red, 0 0 0.55em red, 0 0 0.65em red;
+    }
+  }
+  /* ================
+  // Roses
+  // ============= */
+  .roses {
+    position: relative;
+    height: 50vmin;
+    width: 100%;
+    -webkit-animation: grow 10s forwards;
+            animation: grow 10s forwards;
+    transform: rotate(-180deg);
+  }
+  
+  @-webkit-keyframes grow {
+    100% {
+      transform: rotate(15deg);
+    }
+  }
+  
+  @keyframes grow {
+    100% {
+      transform: rotate(15deg);
+    }
+  }
+  .rose {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 50em;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    transform-style: preserve-3d;
+  }
+  .rose:nth-child(1) {
+    z-index: 8;
+    height: 6.8111111111vmin;
+    width: 6.8111111111vmin;
+  }
+  .rose:nth-child(2) {
+    z-index: 7;
+    height: 8.1222222222vmin;
+    width: 8.1222222222vmin;
+  }
+  .rose:nth-child(3) {
+    z-index: 6;
+    height: 11.6333333333vmin;
+    width: 11.6333333333vmin;
+  }
+  .rose:nth-child(4) {
+    z-index: 5;
+    height: 16.7444444444vmin;
+    width: 16.7444444444vmin;
+  }
+  .rose:nth-child(5) {
+    z-index: 4;
+    height: 20.5055555556vmin;
+    width: 20.5055555556vmin;
+  }
+  .rose:nth-child(6) {
+    z-index: 3;
+    height: 20.4666666667vmin;
+    width: 20.4666666667vmin;
+  }
+  .rose:nth-child(7) {
+    z-index: 2;
+    height: 26.2277777778vmin;
+    width: 26.2277777778vmin;
+  }
+  .rose:nth-child(8) {
+    z-index: 1;
+    height: 25.2388888889vmin;
+    width: 25.2388888889vmin;
+  }
+  .rose:nth-child(9) {
+    z-index: 0;
+    height: 29.45vmin;
+    width: 29.45vmin;
+  }
+  
+  .pedal {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform-origin: center 100%;
+  }
+  .pedal:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    border-radius: 0.35em 50% 35% 50%;
+    transform: rotate(45deg);
+  }
+  .pedal:nth-child(1) {
+    transform: translate(-50%, 0) rotateZ(27.6923076923deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(1) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards 3.6s;
+            animation: flower-1 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(1):before {
+    background: #ad0000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards 3.6s;
+            animation: flower-2 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(2):before {
+    background: #ac0000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards 3.6s;
+            animation: flower-3 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(3):before {
+    background: #cb0000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards 3.6s;
+            animation: flower-4 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(4):before {
+    background: #e60000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards 3.6s;
+            animation: flower-5 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(5):before {
+    background: #dc0000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards 3.6s;
+            animation: flower-6 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(6):before {
+    background: #e40000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards 3.6s;
+            animation: flower-7 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(7):before {
+    background: #ed0000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards 3.6s;
+            animation: flower-8 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(8):before {
+    background: #a20000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards 3.6s;
+            animation: flower-9 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(9):before {
+    background: #fe0000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards 3.6s;
+            animation: flower-10 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(10):before {
+    background: #9c0000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards 3.6s;
+            animation: flower-11 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(11):before {
+    background: #9b0000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards 3.6s;
+            animation: flower-12 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(12):before {
+    background: #a70000;
+  }
+  .rose:nth-child(1) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards 3.6s;
+            animation: flower-13 10s forwards 3.6s;
+  }
+  .rose:nth-child(1) .pedal:nth-child(13):before {
+    background: #f50000;
+  }
+  .pedal:nth-child(2) {
+    transform: translate(-50%, 0) rotateZ(55.3846153846deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(2) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards 3.15s;
+            animation: flower-1 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(1):before {
+    background: #f20000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards 3.15s;
+            animation: flower-2 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(2):before {
+    background: #c30000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards 3.15s;
+            animation: flower-3 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(3):before {
+    background: #b00000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards 3.15s;
+            animation: flower-4 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(4):before {
+    background: #c50000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards 3.15s;
+            animation: flower-5 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(5):before {
+    background: #ef0000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards 3.15s;
+            animation: flower-6 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(6):before {
+    background: #ce0000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards 3.15s;
+            animation: flower-7 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(7):before {
+    background: #9a0000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards 3.15s;
+            animation: flower-8 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(8):before {
+    background: #a60000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards 3.15s;
+            animation: flower-9 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(9):before {
+    background: #ab0000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards 3.15s;
+            animation: flower-10 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(10):before {
+    background: #bb0000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards 3.15s;
+            animation: flower-11 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(11):before {
+    background: #d50000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards 3.15s;
+            animation: flower-12 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(12):before {
+    background: #eb0000;
+  }
+  .rose:nth-child(2) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards 3.15s;
+            animation: flower-13 10s forwards 3.15s;
+  }
+  .rose:nth-child(2) .pedal:nth-child(13):before {
+    background: #bb0000;
+  }
+  .pedal:nth-child(3) {
+    transform: translate(-50%, 0) rotateZ(83.0769230769deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(3) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards 2.7s;
+            animation: flower-1 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(1):before {
+    background: #e20000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards 2.7s;
+            animation: flower-2 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(2):before {
+    background: #d10000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards 2.7s;
+            animation: flower-3 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(3):before {
+    background: #d20000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards 2.7s;
+            animation: flower-4 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(4):before {
+    background: #970000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards 2.7s;
+            animation: flower-5 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(5):before {
+    background: #f10000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards 2.7s;
+            animation: flower-6 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(6):before {
+    background: #c60000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards 2.7s;
+            animation: flower-7 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(7):before {
+    background: #cb0000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards 2.7s;
+            animation: flower-8 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(8):before {
+    background: #fd0000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards 2.7s;
+            animation: flower-9 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(9):before {
+    background: #ef0000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards 2.7s;
+            animation: flower-10 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(10):before {
+    background: #e20000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards 2.7s;
+            animation: flower-11 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(11):before {
+    background: #b30000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards 2.7s;
+            animation: flower-12 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(12):before {
+    background: #ac0000;
+  }
+  .rose:nth-child(3) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards 2.7s;
+            animation: flower-13 10s forwards 2.7s;
+  }
+  .rose:nth-child(3) .pedal:nth-child(13):before {
+    background: #fc0000;
+  }
+  .pedal:nth-child(4) {
+    transform: translate(-50%, 0) rotateZ(110.7692307692deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(4) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards 2.25s;
+            animation: flower-1 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(1):before {
+    background: #fc0000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards 2.25s;
+            animation: flower-2 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(2):before {
+    background: #980000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards 2.25s;
+            animation: flower-3 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(3):before {
+    background: #ef0000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards 2.25s;
+            animation: flower-4 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(4):before {
+    background: #920000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards 2.25s;
+            animation: flower-5 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(5):before {
+    background: #da0000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards 2.25s;
+            animation: flower-6 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(6):before {
+    background: #c20000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards 2.25s;
+            animation: flower-7 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(7):before {
+    background: #ba0000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards 2.25s;
+            animation: flower-8 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(8):before {
+    background: #a40000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards 2.25s;
+            animation: flower-9 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(9):before {
+    background: #f30000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards 2.25s;
+            animation: flower-10 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(10):before {
+    background: #ab0000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards 2.25s;
+            animation: flower-11 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(11):before {
+    background: #e00000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards 2.25s;
+            animation: flower-12 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(12):before {
+    background: #c60000;
+  }
+  .rose:nth-child(4) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards 2.25s;
+            animation: flower-13 10s forwards 2.25s;
+  }
+  .rose:nth-child(4) .pedal:nth-child(13):before {
+    background: #c50000;
+  }
+  .pedal:nth-child(5) {
+    transform: translate(-50%, 0) rotateZ(138.4615384615deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(5) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards 1.8s;
+            animation: flower-1 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(1):before {
+    background: #c50000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards 1.8s;
+            animation: flower-2 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(2):before {
+    background: #990000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards 1.8s;
+            animation: flower-3 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(3):before {
+    background: #a90000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards 1.8s;
+            animation: flower-4 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(4):before {
+    background: #d20000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards 1.8s;
+            animation: flower-5 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(5):before {
+    background: #f80000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards 1.8s;
+            animation: flower-6 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(6):before {
+    background: #f40000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards 1.8s;
+            animation: flower-7 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(7):before {
+    background: #c80000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards 1.8s;
+            animation: flower-8 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(8):before {
+    background: #a40000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards 1.8s;
+            animation: flower-9 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(9):before {
+    background: #dc0000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards 1.8s;
+            animation: flower-10 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(10):before {
+    background: #da0000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards 1.8s;
+            animation: flower-11 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(11):before {
+    background: #ed0000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards 1.8s;
+            animation: flower-12 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(12):before {
+    background: #920000;
+  }
+  .rose:nth-child(5) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards 1.8s;
+            animation: flower-13 10s forwards 1.8s;
+  }
+  .rose:nth-child(5) .pedal:nth-child(13):before {
+    background: #b90000;
+  }
+  .pedal:nth-child(6) {
+    transform: translate(-50%, 0) rotateZ(166.1538461538deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(6) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards 1.35s;
+            animation: flower-1 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(1):before {
+    background: #950000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards 1.35s;
+            animation: flower-2 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(2):before {
+    background: #a10000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards 1.35s;
+            animation: flower-3 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(3):before {
+    background: #c90000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards 1.35s;
+            animation: flower-4 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(4):before {
+    background: #c20000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards 1.35s;
+            animation: flower-5 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(5):before {
+    background: #a30000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards 1.35s;
+            animation: flower-6 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(6):before {
+    background: #db0000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards 1.35s;
+            animation: flower-7 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(7):before {
+    background: #a00000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards 1.35s;
+            animation: flower-8 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(8):before {
+    background: #dd0000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards 1.35s;
+            animation: flower-9 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(9):before {
+    background: #b10000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards 1.35s;
+            animation: flower-10 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(10):before {
+    background: #da0000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards 1.35s;
+            animation: flower-11 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(11):before {
+    background: #ac0000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards 1.35s;
+            animation: flower-12 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(12):before {
+    background: #dc0000;
+  }
+  .rose:nth-child(6) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards 1.35s;
+            animation: flower-13 10s forwards 1.35s;
+  }
+  .rose:nth-child(6) .pedal:nth-child(13):before {
+    background: #df0000;
+  }
+  .pedal:nth-child(7) {
+    transform: translate(-50%, 0) rotateZ(193.8461538462deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(7) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards 0.9s;
+            animation: flower-1 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(1):before {
+    background: #c30000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards 0.9s;
+            animation: flower-2 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(2):before {
+    background: #db0000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards 0.9s;
+            animation: flower-3 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(3):before {
+    background: #9d0000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards 0.9s;
+            animation: flower-4 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(4):before {
+    background: #be0000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards 0.9s;
+            animation: flower-5 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(5):before {
+    background: #940000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards 0.9s;
+            animation: flower-6 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(6):before {
+    background: #a30000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards 0.9s;
+            animation: flower-7 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(7):before {
+    background: #fd0000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards 0.9s;
+            animation: flower-8 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(8):before {
+    background: #e50000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards 0.9s;
+            animation: flower-9 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(9):before {
+    background: #ea0000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards 0.9s;
+            animation: flower-10 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(10):before {
+    background: #c00000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards 0.9s;
+            animation: flower-11 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(11):before {
+    background: #d00000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards 0.9s;
+            animation: flower-12 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(12):before {
+    background: #a90000;
+  }
+  .rose:nth-child(7) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards 0.9s;
+            animation: flower-13 10s forwards 0.9s;
+  }
+  .rose:nth-child(7) .pedal:nth-child(13):before {
+    background: #990000;
+  }
+  .pedal:nth-child(8) {
+    transform: translate(-50%, 0) rotateZ(221.5384615385deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(8) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards 0.45s;
+            animation: flower-1 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(1):before {
+    background: #f80000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards 0.45s;
+            animation: flower-2 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(2):before {
+    background: #d30000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards 0.45s;
+            animation: flower-3 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(3):before {
+    background: #e80000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards 0.45s;
+            animation: flower-4 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(4):before {
+    background: #d00000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards 0.45s;
+            animation: flower-5 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(5):before {
+    background: #d20000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards 0.45s;
+            animation: flower-6 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(6):before {
+    background: #a40000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards 0.45s;
+            animation: flower-7 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(7):before {
+    background: #c80000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards 0.45s;
+            animation: flower-8 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(8):before {
+    background: #b40000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards 0.45s;
+            animation: flower-9 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(9):before {
+    background: #d60000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards 0.45s;
+            animation: flower-10 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(10):before {
+    background: #ec0000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards 0.45s;
+            animation: flower-11 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(11):before {
+    background: #b20000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards 0.45s;
+            animation: flower-12 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(12):before {
+    background: #990000;
+  }
+  .rose:nth-child(8) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards 0.45s;
+            animation: flower-13 10s forwards 0.45s;
+  }
+  .rose:nth-child(8) .pedal:nth-child(13):before {
+    background: #e60000;
+  }
+  .pedal:nth-child(9) {
+    transform: translate(-50%, 0) rotateZ(249.2307692308deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(9) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards 0s;
+            animation: flower-1 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(1):before {
+    background: #cd0000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards 0s;
+            animation: flower-2 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(2):before {
+    background: #c50000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards 0s;
+            animation: flower-3 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(3):before {
+    background: #b10000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards 0s;
+            animation: flower-4 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(4):before {
+    background: #c40000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards 0s;
+            animation: flower-5 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(5):before {
+    background: #a50000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards 0s;
+            animation: flower-6 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(6):before {
+    background: #a80000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards 0s;
+            animation: flower-7 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(7):before {
+    background: #d00000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards 0s;
+            animation: flower-8 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(8):before {
+    background: #f80000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards 0s;
+            animation: flower-9 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(9):before {
+    background: #e70000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards 0s;
+            animation: flower-10 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(10):before {
+    background: #940000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards 0s;
+            animation: flower-11 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(11):before {
+    background: #dd0000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards 0s;
+            animation: flower-12 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(12):before {
+    background: #f20000;
+  }
+  .rose:nth-child(9) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards 0s;
+            animation: flower-13 10s forwards 0s;
+  }
+  .rose:nth-child(9) .pedal:nth-child(13):before {
+    background: #e20000;
+  }
+  .pedal:nth-child(10) {
+    transform: translate(-50%, 0) rotateZ(276.9230769231deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(10) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards -0.45s;
+            animation: flower-1 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(1):before {
+    background: #b90000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards -0.45s;
+            animation: flower-2 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(2):before {
+    background: #fb0000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards -0.45s;
+            animation: flower-3 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(3):before {
+    background: #b40000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards -0.45s;
+            animation: flower-4 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(4):before {
+    background: #9b0000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards -0.45s;
+            animation: flower-5 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(5):before {
+    background: #e90000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards -0.45s;
+            animation: flower-6 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(6):before {
+    background: #990000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards -0.45s;
+            animation: flower-7 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(7):before {
+    background: #b20000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards -0.45s;
+            animation: flower-8 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(8):before {
+    background: #cf0000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards -0.45s;
+            animation: flower-9 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(9):before {
+    background: #f40000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards -0.45s;
+            animation: flower-10 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(10):before {
+    background: #a00000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards -0.45s;
+            animation: flower-11 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(11):before {
+    background: #d30000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards -0.45s;
+            animation: flower-12 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(12):before {
+    background: #d00000;
+  }
+  .rose:nth-child(10) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards -0.45s;
+            animation: flower-13 10s forwards -0.45s;
+  }
+  .rose:nth-child(10) .pedal:nth-child(13):before {
+    background: #c60000;
+  }
+  .pedal:nth-child(11) {
+    transform: translate(-50%, 0) rotateZ(304.6153846154deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(11) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards -0.9s;
+            animation: flower-1 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(1):before {
+    background: #e60000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards -0.9s;
+            animation: flower-2 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(2):before {
+    background: #950000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards -0.9s;
+            animation: flower-3 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(3):before {
+    background: #bd0000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards -0.9s;
+            animation: flower-4 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(4):before {
+    background: #940000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards -0.9s;
+            animation: flower-5 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(5):before {
+    background: #b40000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards -0.9s;
+            animation: flower-6 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(6):before {
+    background: #fd0000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards -0.9s;
+            animation: flower-7 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(7):before {
+    background: #fd0000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards -0.9s;
+            animation: flower-8 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(8):before {
+    background: #c70000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards -0.9s;
+            animation: flower-9 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(9):before {
+    background: #d50000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards -0.9s;
+            animation: flower-10 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(10):before {
+    background: #b80000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards -0.9s;
+            animation: flower-11 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(11):before {
+    background: #d40000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards -0.9s;
+            animation: flower-12 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(12):before {
+    background: #c00000;
+  }
+  .rose:nth-child(11) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards -0.9s;
+            animation: flower-13 10s forwards -0.9s;
+  }
+  .rose:nth-child(11) .pedal:nth-child(13):before {
+    background: #bb0000;
+  }
+  .pedal:nth-child(12) {
+    transform: translate(-50%, 0) rotateZ(332.3076923077deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(12) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards -1.35s;
+            animation: flower-1 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(1):before {
+    background: #b30000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards -1.35s;
+            animation: flower-2 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(2):before {
+    background: #980000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards -1.35s;
+            animation: flower-3 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(3):before {
+    background: #b10000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards -1.35s;
+            animation: flower-4 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(4):before {
+    background: #f10000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards -1.35s;
+            animation: flower-5 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(5):before {
+    background: #a30000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards -1.35s;
+            animation: flower-6 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(6):before {
+    background: #d00000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards -1.35s;
+            animation: flower-7 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(7):before {
+    background: #c80000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards -1.35s;
+            animation: flower-8 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(8):before {
+    background: #950000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards -1.35s;
+            animation: flower-9 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(9):before {
+    background: #da0000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards -1.35s;
+            animation: flower-10 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(10):before {
+    background: #c30000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards -1.35s;
+            animation: flower-11 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(11):before {
+    background: #fc0000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards -1.35s;
+            animation: flower-12 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(12):before {
+    background: #d00000;
+  }
+  .rose:nth-child(12) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards -1.35s;
+            animation: flower-13 10s forwards -1.35s;
+  }
+  .rose:nth-child(12) .pedal:nth-child(13):before {
+    background: #e60000;
+  }
+  .pedal:nth-child(13) {
+    transform: translate(-50%, 0) rotateZ(360deg) rotateX(-70deg) rotateY(8deg) scale(0);
+  }
+  .rose:nth-child(13) .pedal:nth-child(1) {
+    -webkit-animation: flower-1 10s forwards -1.8s;
+            animation: flower-1 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(1):before {
+    background: #db0000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(2) {
+    -webkit-animation: flower-2 10s forwards -1.8s;
+            animation: flower-2 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(2):before {
+    background: #ac0000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(3) {
+    -webkit-animation: flower-3 10s forwards -1.8s;
+            animation: flower-3 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(3):before {
+    background: #a00000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(4) {
+    -webkit-animation: flower-4 10s forwards -1.8s;
+            animation: flower-4 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(4):before {
+    background: #ea0000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(5) {
+    -webkit-animation: flower-5 10s forwards -1.8s;
+            animation: flower-5 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(5):before {
+    background: #a70000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(6) {
+    -webkit-animation: flower-6 10s forwards -1.8s;
+            animation: flower-6 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(6):before {
+    background: #b40000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(7) {
+    -webkit-animation: flower-7 10s forwards -1.8s;
+            animation: flower-7 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(7):before {
+    background: #df0000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(8) {
+    -webkit-animation: flower-8 10s forwards -1.8s;
+            animation: flower-8 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(8):before {
+    background: #a40000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(9) {
+    -webkit-animation: flower-9 10s forwards -1.8s;
+            animation: flower-9 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(9):before {
+    background: #db0000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(10) {
+    -webkit-animation: flower-10 10s forwards -1.8s;
+            animation: flower-10 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(10):before {
+    background: #f20000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(11) {
+    -webkit-animation: flower-11 10s forwards -1.8s;
+            animation: flower-11 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(11):before {
+    background: #d50000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(12) {
+    -webkit-animation: flower-12 10s forwards -1.8s;
+            animation: flower-12 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(12):before {
+    background: #e10000;
+  }
+  .rose:nth-child(13) .pedal:nth-child(13) {
+    -webkit-animation: flower-13 10s forwards -1.8s;
+            animation: flower-13 10s forwards -1.8s;
+  }
+  .rose:nth-child(13) .pedal:nth-child(13):before {
+    background: #d10000;
+  }
+  
+  @-webkit-keyframes flower-1 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(27.6923076923deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  
+  @keyframes flower-1 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(27.6923076923deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-2 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(55.3846153846deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-2 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(55.3846153846deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-3 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(83.0769230769deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-3 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(83.0769230769deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-4 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(110.7692307692deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-4 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(110.7692307692deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-5 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(138.4615384615deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-5 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(138.4615384615deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-6 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(166.1538461538deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-6 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(166.1538461538deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-7 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(193.8461538462deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-7 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(193.8461538462deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-8 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(221.5384615385deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-8 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(221.5384615385deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-9 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(249.2307692308deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-9 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(249.2307692308deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-10 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(276.9230769231deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-10 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(276.9230769231deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-11 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(304.6153846154deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-11 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(304.6153846154deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-12 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(332.3076923077deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-12 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(332.3076923077deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @-webkit-keyframes flower-13 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(360deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  @keyframes flower-13 {
+    100% {
+      transform: translate(-50%, 0) rotateZ(360deg) rotateX(0) rotateY(8deg) scale(1);
+    }
+  }
+  /* ================
+  // Bursts
+  // ============= */
+  .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  .bubble {
+    position: absolute;
+    z-index: 200;
+    border-radius: 50%;
+  }
+  .bubble:nth-child(1) {
+    top: 64%;
+    left: 21%;
+    height: 11vmin;
+    width: 11vmin;
+    -webkit-animation: love-burst 1.5s infinite 0s;
+            animation: love-burst 1.5s infinite 0s;
+    box-shadow: inset 0 0 0 5.5vmin #fff;
+    transform: translate(0, 0.8em) scale(0);
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(2) {
+    top: 46%;
+    left: 69%;
+    height: 16vmin;
+    width: 16vmin;
+    -webkit-animation: love-burst 1.5s infinite 0.15s;
+            animation: love-burst 1.5s infinite 0.15s;
+    box-shadow: inset 0 0 0 8vmin #fff;
+    transform: translate(0, 0.75em) scale(0);
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(3) {
+    top: 52%;
+    left: 42%;
+    height: 8vmin;
+    width: 8vmin;
+    -webkit-animation: love-burst 1.5s infinite 0.3s;
+            animation: love-burst 1.5s infinite 0.3s;
+    box-shadow: inset 0 0 0 4vmin #fff;
+    transform: translate(0, 0.3em) scale(0);
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(4) {
+    top: 14%;
+    left: 13%;
+    height: 19vmin;
+    width: 19vmin;
+    -webkit-animation: love-burst 1.5s infinite 0.45s;
+            animation: love-burst 1.5s infinite 0.45s;
+    box-shadow: inset 0 0 0 9.5vmin #fff;
+    transform: translate(0, 0.35em) scale(0);
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(5) {
+    top: 93%;
+    left: 89%;
+    height: 17vmin;
+    width: 17vmin;
+    -webkit-animation: love-burst 1.5s infinite 0.6s;
+            animation: love-burst 1.5s infinite 0.6s;
+    box-shadow: inset 0 0 0 8.5vmin #fff;
+    transform: translate(0, 0.2em) scale(0);
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(6) {
+    top: 65%;
+    left: 38%;
+    height: 9vmin;
+    width: 9vmin;
+    -webkit-animation: love-burst 1.5s infinite 0.75s;
+            animation: love-burst 1.5s infinite 0.75s;
+    box-shadow: inset 0 0 0 4.5vmin #fff;
+    transform: translate(0, 1.15em) scale(0);
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(7) {
+    top: 36%;
+    left: 55%;
+    height: 13vmin;
+    width: 13vmin;
+    -webkit-animation: love-burst 1.5s infinite 0.9s;
+            animation: love-burst 1.5s infinite 0.9s;
+    box-shadow: inset 0 0 0 6.5vmin #fff;
+    transform: translate(0, 1.1em) scale(0);
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(8) {
+    top: 79%;
+    left: 53%;
+    height: 15vmin;
+    width: 15vmin;
+    -webkit-animation: love-burst 1.5s infinite 1.05s;
+            animation: love-burst 1.5s infinite 1.05s;
+    box-shadow: inset 0 0 0 7.5vmin #fff;
+    transform: translate(0, 0.35em) scale(0);
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(9) {
+    top: 81%;
+    left: 36%;
+    height: 1vmin;
+    width: 1vmin;
+    -webkit-animation: love-burst 1.5s infinite 1.2s;
+            animation: love-burst 1.5s infinite 1.2s;
+    box-shadow: inset 0 0 0 0.5vmin #fff;
+    transform: translate(0, 0.3em) scale(0);
+    transform-origin: center bottom;
+  }
+  .bubble:nth-child(10) {
+    top: 31%;
+    left: 70%;
+    height: 2vmin;
+    width: 2vmin;
+    -webkit-animation: love-burst 1.5s infinite 1.35s;
+            animation: love-burst 1.5s infinite 1.35s;
+    box-shadow: inset 0 0 0 1vmin #fff;
+    transform: translate(0, 0.95em) scale(0);
+    transform-origin: center bottom;
+  }
+  
+  @-webkit-keyframes love-burst {
+    50%, 100% {
+      box-shadow: inset 0 0 0 0 red;
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  
+  @keyframes love-burst {
+    50%, 100% {
+      box-shadow: inset 0 0 0 0 red;
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  .heart {
+    fill: #fff;
+    opacity: 0;
+  }
+  .bubble:nth-child(1) .heart {
+    -webkit-animation: love 1.5s forwards infinite 0s;
+            animation: love 1.5s forwards infinite 0s;
+    transform: scale(0.5) rotate(-12deg);
+  }
+  .bubble:nth-child(2) .heart {
+    -webkit-animation: love 1.5s forwards infinite 0.15s;
+            animation: love 1.5s forwards infinite 0.15s;
+    transform: scale(0.5) rotate(46deg);
+  }
+  .bubble:nth-child(3) .heart {
+    -webkit-animation: love 1.5s forwards infinite 0.3s;
+            animation: love 1.5s forwards infinite 0.3s;
+    transform: scale(0.5) rotate(-29deg);
+  }
+  .bubble:nth-child(4) .heart {
+    -webkit-animation: love 1.5s forwards infinite 0.45s;
+            animation: love 1.5s forwards infinite 0.45s;
+    transform: scale(0.5) rotate(26deg);
+  }
+  .bubble:nth-child(5) .heart {
+    -webkit-animation: love 1.5s forwards infinite 0.6s;
+            animation: love 1.5s forwards infinite 0.6s;
+    transform: scale(0.5) rotate(-18deg);
+  }
+  .bubble:nth-child(6) .heart {
+    -webkit-animation: love 1.5s forwards infinite 0.75s;
+            animation: love 1.5s forwards infinite 0.75s;
+    transform: scale(0.5) rotate(38deg);
+  }
+  .bubble:nth-child(7) .heart {
+    -webkit-animation: love 1.5s forwards infinite 0.9s;
+            animation: love 1.5s forwards infinite 0.9s;
+    transform: scale(0.5) rotate(-34deg);
+  }
+  .bubble:nth-child(8) .heart {
+    -webkit-animation: love 1.5s forwards infinite 1.05s;
+            animation: love 1.5s forwards infinite 1.05s;
+    transform: scale(0.5) rotate(13deg);
+  }
+  .bubble:nth-child(9) .heart {
+    -webkit-animation: love 1.5s forwards infinite 1.2s;
+            animation: love 1.5s forwards infinite 1.2s;
+    transform: scale(0.5) rotate(-28deg);
+  }
+  .bubble:nth-child(10) .heart {
+    -webkit-animation: love 1.5s forwards infinite 1.35s;
+            animation: love 1.5s forwards infinite 1.35s;
+    transform: scale(0.5) rotate(19deg);
+  }
+  
+  @-webkit-keyframes love {
+    50% {
+      fill: red;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes love {
+    50% {
+      fill: red;
+      opacity: 1;
+    }
+  }
+  /* ================
+  // Structure
+  // ============= */
+  html,
+  body {
+    height: 100%;
+  }
+  
+  html {
+    overflow: hidden;
+    font-family: "Petit Formal Script";
+    background: radial-gradient(ellipse at center, #051838, #0A093B 100%);
+    color: #fff;
+  }

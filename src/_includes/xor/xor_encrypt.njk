@@ -1,0 +1,31 @@
+{% macro raw_xor_encrypt(text) %}
+{{ text | xorEncrypt | toBase64 | safe }}
+{% endmacro %}
+
+{% macro ptag_xor_encrypt(text) %}
+<p data-xored="">{{ text | xorEncrypt | toBase64 | safe }}</p>
+{% endmacro %}
+
+{% macro divtag_xor_encrypt(text) %}
+<div data-xored="">{{ text | xorEncrypt | toBase64 | safe }}</div>
+{% endmacro %}
+
+{% macro spantag_xor_encrypt(text) %}
+<span data-xored="">{{ text | xorEncrypt | toBase64 | safe }}</span>
+{% endmacro %}
+
+{% macro blockquotetag_xor_encrypt(text) %}
+<blockquote data-xored="">{{ text | xorEncrypt | toBase64 | safe }}</blockquote>
+{% endmacro %}
+
+{% macro h1tag_xor_encrypt(text) %}
+<h1 data-xored="">{{ text | xorEncrypt | toBase64 | safe }}</h1>
+{% endmacro %}
+
+{% macro h2tag_xor_encrypt(text) %}
+<h2 data-xored="">{{ text | xorEncrypt | toBase64 | safe }}</h2>
+{% endmacro %}
+
+{% macro h3tag_xor_encrypt(text) %}
+<h3 data-xored="">{{ text | xorEncrypt | toBase64 | safe }}</h3>
+{% endmacro %}

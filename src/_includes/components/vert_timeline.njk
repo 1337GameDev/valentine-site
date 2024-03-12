@@ -1,0 +1,236 @@
+{% import "../xor/xor_encrypt.njk" as xor %}
+
+<script src="/node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
+<link rel="stylesheet" href="/assets/css/vert-timeline.css">
+<script src="/assets/js/vert-timeline.js"></script>
+
+<header class="timeline-header">
+    <div class="container">
+      {{ xor.h1tag_xor_encrypt(timeline_text.main_thinking_title) }}
+      {{ xor.ptag_xor_encrypt(timeline_text.main_how_we_met_title) }}
+    </div>
+</header>
+  
+  <section class="timeline">
+    <div class="container">
+        <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content timeline-card js--fadeInLeft">
+                <div class="timeline-img-header">
+                    {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+                </div>
+
+                <div class="date">01 JAN 2024</div>
+                
+                {% for txt in lorem_ipsum.text2 %}
+                  {{ xor.ptag_xor_encrypt(txt) }}
+                {% endfor %}
+            </div>
+        </div> 
+
+        <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content js--fadeInRight">
+                {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+
+                <div class="date">02 JAN 2024</div>
+
+                {% for txt in lorem_ipsum.text2 %}
+                  {{ xor.ptag_xor_encrypt(txt) }}
+                {% endfor %}
+            </div>
+        </div> 
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInLeft">
+          {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+
+          <div class="date">03 JAN 2024</div>
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div> 
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInRight">
+          {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+          
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div> 
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInLeft">
+          {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+          
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div>   
+  
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInRight">
+          {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+
+          {{ xor.blockquotetag_xor_encrypt(timeline_text.quote1) }}
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div>   
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInLeft">
+          {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+
+          {{ xor.blockquotetag_xor_encrypt(timeline_text.quote1) }}
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div>  
+  
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content timeline-card js--fadeInRight">
+          <div class="timeline-img-header">
+            {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+          </div>
+
+          <div class="date">04 JAN 2024</div>
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div> 
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInLeft">
+          {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div>   
+  
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content timeline-card js--fadeInRight">
+          <div class="timeline-img-header">
+            {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+          </div>
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div>   
+  
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInLeft">
+          {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+
+          <div class="date">05 JAN 2024</div>
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div> 
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInRight">
+          {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+
+          {{ xor.blockquotetag_xor_encrypt(timeline_text.quote1) }}
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div> 
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInLeft">
+          {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div> 
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInRight">
+          {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div> 
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content timeline-card js--fadeInLeft">
+          <div class="timeline-img-header">
+            {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+          </div>
+
+          <div class="date">06 JAN 2024</div>
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content timeline-card js--fadeInRight">
+          <div class="timeline-img-header">
+            {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+          </div>
+
+          <div class="date">07 FEB 2024</div>
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div> 
+  
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+        <div class="timeline-content js--fadeInLeft">
+          {{ xor.h2tag_xor_encrypt(timeline_text.example_title) }}
+
+          <div class="date">08 FEB 2024</div>
+
+          {% for txt in lorem_ipsum.text2 %}
+            {{ xor.ptag_xor_encrypt(txt) }}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+  

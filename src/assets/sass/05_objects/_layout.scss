@@ -1,0 +1,17 @@
+@import 'every_layout/sidebar';
+@import 'every_layout/cluster';
+@import 'every_layout/stack';
+
+// container for the whole page
+.page {
+	margin: var(--gap);
+
+	display: flex;
+	flex-direction: column;
+
+	min-height: calc(100vh - 2 * var(--gap));
+
+	overflow-y: scroll;
+	background-color: #59325b;
+	  
+}

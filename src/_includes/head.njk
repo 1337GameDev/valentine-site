@@ -1,0 +1,73 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% block title %}
+  {% if page.url == '/' %}
+    {% set page_title %}{{ pkg.title }}, {{ pkg.description }}{% endset %}
+  {% else %}
+    {% set page_title %}{{ title }} — {{ pkg.title }}{% endset %}
+  {% endif %}
+  <title>{{ page_title }}</title>
+  <meta property="og:title" content="{{ page_title }}" />
+{% endblock %}
+
+{% include "css.njk" %}
+{% include "js.njk" %}
+
+{% block description %}
+  <meta name="description" content="{{ description or content | excerpt | striptags }}" />
+  <meta property="og:description" content="{{ description or content | excerpt | striptags }}" />
+{% endblock %}
+
+<link rel="canonical" href="{{ pkg.homepage + page.url }}" itemprop="url" />
+<meta property="og:url" content="{{ pkg.homepage + page.url }}" />
+
+{% if page.layout != "pages" %}
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="{{ page.date | attributeDate }}" />
+  {% for tag in tags %}
+    <meta property="article:tag" content="{{ tag }}" />
+  {% endfor %}
+{% endif %}
+
+<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+<link rel="mask-icon" href="/static/images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/static/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/static/images/browserconfig.xml">
+
+{# ########################################################
+ # opengraph and Twitter
+ # ########################################################}
+<meta property="og:site_name" content="{{ pkg.title }}" />
+<meta name="twitter:creator" content="@1337gamedev" />
+<meta name="twitter:site" content="@1337gamedev" />
+{# https://developer.twitter.com/en/docs/twitter-for-websites/webpage-properties#twtr-article-embedded-survey #}
+<meta name="twitter:widgets:csp" content="on" />
+{#
+https://developers.facebook.com/docs/sharing/best-practices?locale=fr_FR#images
+https://developers.facebook.com/tools/debug/sharing/
+#}
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="{% ogImage title %}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+{# iOS features #}
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-title" content="{{ pkg.title }}" />
+{# https://timkadlec.com/remembers/2018-06-06-web-watch/ #}
+<meta name="disabled-adaptations" content="watch" />
+
+{#
+Theme color: https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+#}
+<meta name="theme-color" content="#663399">
+
+{# web app manifest #}
+<link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+
+{% block morehead %}{% endblock %}

@@ -1,0 +1,12 @@
+main {
+	max-width: var(--maxcontent);
+}
+
+main > h1 {
+	padding-left: 16px;
+}
+
+// Lobotomized owl
+main > * + * {
+	margin-top: var(--gap);
+}

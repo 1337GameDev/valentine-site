@@ -1,0 +1,6 @@
+<footer>
+  <p>Built by {{ pkg.sender_display|safe }}, for {{ pkg.recipient_display|safe }}</p>
+  <time datetime="{{ buildInfo.time.raw }}">
+    {{ buildInfo.time.formatted }}
+</time>
+</footer>

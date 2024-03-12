@@ -1,0 +1,35 @@
+---
+title:  🌹 A Letter To You 🌹
+---
+<link rel="stylesheet" href="/node_modules/angular-material/angular-material.min.css">
+<link rel="stylesheet" href="/assets/css/paper.css">
+<link rel="stylesheet" href="/assets/css/scribble-button.css">
+
+{% import "../_includes/xor/xor_encrypt.njk" as xor %}
+
+<div class="letter">
+  {{ xor.ptag_xor_encrypt('Dear Jane,') }}
+
+  {% for txt in lorem_ipsum.text %}
+    {{ xor.ptag_xor_encrypt(txt) }}
+  {% endfor %}
+
+  {{ xor.ptag_xor_encrypt('Love Joe') }}
+</div>
+
+<span class="scribble-button">
+    <a href="/flowers" class="button type--B">
+        <div class="button__line"></div>
+        <div class="button__line"></div>
+        <span class="button__text">Continue</span>
+        <div class="button__drow1"></div>
+        <div class="button__drow2"></div>
+    </a>
+</span>
+
+<link rel="stylesheet" href="{% getBundleFileUrl "css", "cached" %}">
+{%- css "cached" %}{% renderFile "src/assets/sass/06_components/cached.scss" %}{% endcss %}
+<ul id="cached"></ul>
+
+<script type="module" src="{% getBundleFileUrl "js", "cached-content" %}"></script>
+

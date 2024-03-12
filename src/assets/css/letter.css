@@ -1,0 +1,317 @@
+.letter {
+    position: relative;
+    display: block;
+    margin-top: 100px;
+}
+  
+.letter--open .paper {
+    -webkit-animation-name: upthenscale;
+            animation-name: upthenscale;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+.letter--close .paper {
+    -webkit-animation-name: scalethendown;
+            animation-name: scalethendown;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+  
+.letter--open .paper-content {
+    -webkit-animation-name: waitfade;
+            animation-name: waitfade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+  
+.letter--open .envelope {
+    -webkit-animation: pause;
+            animation: pause;
+}
+  
+.paper-content {
+    color: #545454;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding: 25px;
+    opacity: 0;
+}
+  
+.paper {
+    height: 50px;
+    width: 90px;
+    background: #f1f0c3;
+    transform: translateY(-52px);
+    margin: 0 auto;
+    transition: transform 0.3s 0.1s ease;
+    border-radius: 2px;
+    position: relative;
+}
+  
+.envelope {
+    width: 94px;
+    height: 60px;
+    background: #f36363;
+    position: relative;
+    margin: auto;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: box-shadow 0.3s ease;
+    transform: translateY(0px);
+    -webkit-animation: wiggle 0.3s 0.2s infinite;
+            animation: wiggle 0.3s 0.2s infinite;
+}
+.envelope:hover {
+    -webkit-animation: pause;
+            animation: pause;
+}
+.envelope:hover .envelope-paper {
+    transform: translateY(-20px);
+}
+.envelope:hover .envelope-flap {
+    transform: translateY(-45px);
+}
+.envelope:hover .envelope-detail::after {
+    visibility: hidden;
+}
+  
+.envelope-paper {
+    height: 50px;
+    width: 90px;
+    background: #f1f0c3;
+    transform: translateY(0);
+    margin: 0 auto;
+    transition: transform 0.3s 0.1s ease;
+    border-radius: 2px;
+    position: absolute;
+    border: 2px solid transparent;
+}
+  
+.letter--open .envelope-paper {
+    visibility: hidden;
+}
+  
+.letter--open .envelope-detail::after {
+    visibility: hidden;
+}
+  
+.letter--close .envelope-paper {
+    visibility: hidden;
+}
+  
+.envelope-flap {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 45px solid #f36363;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    transform: translateY(0);
+}
+  
+.letter--open .envelope-flap {
+    transform: translateY(-45px);
+}
+  
+.letter--open .envelope-detail {
+    border-top: 2px solid #e25b5b;
+}
+  
+.envelope-detail {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background: #f36363;
+    border-top: 2px solid transparent;
+}
+.envelope-detail:before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background: #f36363;
+    display: inline-block;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+    transform: rotate(45deg);
+    border: 4px solid #e65454;
+}
+.envelope-detail:after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background: #f36363;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -45px;
+    margin: auto;
+    transform: rotate(45deg);
+    border: 4px solid #e65454;
+}
+  
+.envelope__fold {
+    height: 25px;
+    width: 86px;
+    background: #f36363;
+    border: 4px solid #e65454;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+  
+.paper-close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+@-webkit-keyframes upthenscale {
+    0% {
+      transform: translateY(50px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    60% {
+      height: 100px;
+      width: 90px;
+      transform: translateY(0);
+    }
+    100% {
+      height: 250px;
+      width: 100%;
+      transform: translateY(0);
+    }
+  }
+  @keyframes upthenscale {
+    0% {
+      transform: translateY(50px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    60% {
+      height: 100px;
+      width: 90px;
+      transform: translateY(0);
+    }
+    100% {
+      height: 250px;
+      width: 100%;
+      transform: translateY(0);
+    }
+}
+@-webkit-keyframes scalethendown {
+    0% {
+      height: 250px;
+      width: 100%;
+      transform: translateY(0);
+    }
+    50% {
+      height: 100px;
+      width: 90px;
+      transform: translateY(0);
+    }
+    60% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(50px);
+    }
+  }
+@keyframes scalethendown {
+    0% {
+      height: 250px;
+      width: 100%;
+      transform: translateY(0);
+    }
+    50% {
+      height: 100px;
+      width: 90px;
+      transform: translateY(0);
+    }
+    60% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(50px);
+    }
+}
+@-webkit-keyframes waitfade {
+    0%, 50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  @keyframes waitfade {
+    0%, 50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@-webkit-keyframes wiggle {
+    0% {
+      transform: translateY(0px) rotate(0);
+    }
+    25% {
+      transform: translateY(0px) rotate(2deg);
+    }
+    50% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    75% {
+      transform: translateY(0px) rotate(-2deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(0);
+    }
+}
+@keyframes wiggle {
+    0% {
+      transform: translateY(0px) rotate(0);
+    }
+    25% {
+      transform: translateY(0px) rotate(2deg);
+    }
+    50% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    75% {
+      transform: translateY(0px) rotate(-2deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(0);
+    }
+}
